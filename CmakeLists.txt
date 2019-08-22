@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 2.8.9)#this line must always be there
+project (hello)#this one too this will be the project name, you can make cmake create visualstudio or codeblocks project files
+#what that means is that you can open your cmake project in other editors and build without stress
+add_executable(hello HelloWorld.cpp)#This line you specify your exe file name, you also add all your sourcecodes after that
+#e.g you can add goodbywo.cpp after helloworld.cpp that will mean your project has two coo files 
+#Whenever you setup a project now you should always select a kit
+#you can install other compilers for cmake and other languages which cmake supports
+#to build the project you go to the bottom of vscode panel and click build
+#Now we must configure vscode to find our exe so it can run it automatically for debugging
